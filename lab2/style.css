@@ -1,0 +1,42 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.firs-row{
+    background-color: #078f8f;
+}
+tr:first-child {
+    background-color: #078f8f;
+    color: #040B14;
+}
+
+tr:nth-child(2) {
+    background-color: #f5f507;
+    color: #000101;
+}
+
+tr:first-child:hover{
+    background-color: #040B14;
+    color:#078f8f;
+}
+
+tr:nth-child(2):hover {
+    background-color: #000101;
+    color: #f5f507;
+
+}
+
+.clock{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
