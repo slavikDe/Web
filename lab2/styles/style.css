@@ -37,5 +37,7 @@ tr:nth-child(2):hover {
     display: flex;
     gap:10%;
 }
-
+p{
+    text-align:center;
+}
 
