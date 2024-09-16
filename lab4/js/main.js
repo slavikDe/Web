@@ -9,24 +9,23 @@ film_book.addEventListener("click", changeBackground);
 gentle_Line.addEventListener("click", changeBackground);
 btn_add_img.addEventListener("click", function() {
     const img = document.getElementById("new_img");
-    // img.src = "https://ukraine.ua/wp-content/uploads/2020/09/Lviv-panoramic-view.Patteran.shutterstock-1536x1017.jpg";
     img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo5RG5lQdAahukd-uUpbmVeV7n5wHSk8XHaQ&s";
     img.width = 150;
     img.height = 150;
-    scrollPageDown(btn_add_img);
+    scrollPageDown();
 });
 btn_increase_img.addEventListener("click", function() {
     const img = document.getElementById("new_img");
     img.width += 50;
     img.height += 50;
-    scrollPageDown(btn_increase_img);
+    scrollPageDown();
 
 });
 btn_decrease_img.addEventListener("click", function() {
     const img = document.getElementById("new_img");
     img.width -= 50;
     img.height -= 50;
-    scrollPageDown(btn_decrease_img);
+    scrollPageDown();
 });
 btn_delete_img.addEventListener("click", function() {
     const img = document.getElementById("new_img");
@@ -47,13 +46,11 @@ function getRandomColor() {
     return `#${randomColor.padStart(6, '0')}`; // Ensure the hex string has 6 characters
 }
 
-function  scrollPageDown(scroll_btn) {
-        scroll_btn.addEventListener('click', function() {
+function  scrollPageDown() {
         window.scrollTo({
-            top: document.body.scrollHeight, // Висота тіла документа
-            behavior: 'smooth' // Плавний скролл
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
         });
-    })
 }
 
 
