@@ -23,10 +23,3 @@ function setValueToHtml(users){
         div[i].querySelectorAll('p')[3].innerHTML = "Email: <br>" + users[i].email;
     }
 }
-
-
-// picture
-// cell cell
-// city location.city
-// postcode location.postcode
-// email email

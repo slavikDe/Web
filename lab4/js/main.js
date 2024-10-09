@@ -33,8 +33,7 @@ btn_delete_img.addEventListener("click", function() {
     img.width = 0;
     img.height = 0;
 
-})
-
+});
 function changeBackground(event){
     const film = event.target;
     film.style.backgroundColor = getRandomColor();
@@ -52,6 +51,3 @@ function  scrollPageDown() {
             behavior: 'smooth'
         });
 }
-
-
-
